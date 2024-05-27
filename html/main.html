@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=60cc27107912ab0e137e2424c5274f01"></script>
+  <title>HODU</title>
+</head>
+<body>
+  <header id="header-top">
+    <section class="header-section">
+      <a href="#">
+        <img src="../img/Logo-fin.png" alt="logo">
+      </a>
+      <nav class="header-nav">
+        <button class="nav-open-toggle">
+          <img src="../img/mobile-nav-menu.png" alt="모바일메뉴 목록 버튼">
+        </button>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <button class="btn-download">Download</button>
+      </nav>
+      <!--모바일 메뉴 목록-->
+      <nav class="mobile-header-nav">
+        <section>
+          <button class="nav-close-toggle">
+            <img src="../img/mobile-arrow-right.png" alt="모바일메뉴 닫기 버튼">
+           </button>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+          <button class="btn-download">Download</button>
+        </section>
+      </nav>
+    </section>
+  </header>
+  <section id="section-intro">
+    <h1 class="hidden-h">상단 홍보</h1>
+    <section class="sc-intro-text-content">
+      <h2>
+        Lorem Ipsum is simply<br/>
+        dummy text of the printing and
+      </h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and<br/>
+        typesetting industry.<br/>
+        Lorem Ipsum has been the industry's standard dummy text<br/>
+        ever since the 1500s, when an unknown
+      </p>
+      <button class="btn-download">Download</button>
+    </section>
+    <section>
+      <h3 class="hidden-h">사진 구역</h3>
+      <img src="../img/cat1.png" alt="박스 쓴 고양이 사진">
+    </section>
+  </section>
+  <main>
+    <!--main-section-->
+    <section id="main-content">
+      <h2 class="hidden-h"></h2>
+      <section>
+        <h3 class="hidden-h"></h3>
+        <img src="../img/cat2.png" alt="누워있는 고양이">
+      </section>
+      <section class="main-text-content">
+        <h3>Lorem Ipsum is simply<br/>
+          dummy text of the printing<br>
+          and dummy text
+        </h3>
+        <p class="intro-content">
+          Lorem Ipsum is simply dummy text of the printing and typesetting<br>
+          industry.
+        </p>
+      </section>
+    </section>
+    <!--더보기 구역-->
+    <section id="main-picture">
+      <section>
+        <h3>dummy text of the printing and dummy</h3>
+        <p>Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+        </p>
+      </section>
+      <section>
+        <h3 class="hidden-h">사진 리스트 구역</h3>
+        <ul>
+          <li><img src="../img/catimg_1.png" alt="고양이 사진1"/></li>
+          <li><img src="../img/catimg_2.png" alt="고양이 사진2"/></li>
+          <li><img src="../img/catimg_3.png" alt="고양이 사진3"/></li>
+          <li><img src="../img/catimg_4.png" alt="고양이 사진4"/></li>
+          <li><img src="../img/catimg_5.png" alt="고양이 사진5"/></li>
+          <li><img src="../img/catimg_6.png" alt="고양이 사진6"/></li>
+        </ul>
+        <ul class="more-images"></ul>
+      </section>
+      <section>
+        <h3>Continue exploring HODU</h3>
+        <button class="button-more">Show more</button>
+      </section>
+    </section>
+    <!-- Map -->
+    <section id="main-map">
+      <hr>
+      <section>
+        <h3>Where you'll be</h3>
+        <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+      </section>
+      <div id="map"></div>
+    </section>
+    <!--Subscribe-->
+    <div class="container">
+      <!--모달 팝업-->
+      <div class="modal">
+        <div class="modal-popup">
+          <div>
+            <img src="../img/modal_cat.png" alt="모달창 고양이 사진">
+            <h3>Thank you!</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+            <button type="button" class="modal-close">OK! I Love HODU</button>
+          </div>
+        </div>
+        <div class="modal-warning">
+          <div>
+            <img src="../img/free-icon-warning.png" alt="이메일 미입력 경고 사진">
+            <h3>이메일을 입력해주세요</h3>
+            <button type="button" class="modal-close">OK</button>
+          </div>
+        </div>
+      </div>
+      <!--구독 신청 폼-->
+      <section id="sc-subscribe">
+        <h2 class="hidden-h">구독 신청 구역</h2>
+        <section>
+          <h3>Subscribe to our Blog post</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+            Lorem Ipsum has been the industry's standard dummy text </p>
+        </section>
+        <form action="" method="post">
+          <div class="input-email-group">
+            <img src="../img/mail.png" alt="이메일 로고">
+            <input
+              id="subscribe-mail"
+              type="email"
+              placeholder="Enter your e-mail address" required>
+            <button type="button" class="modal-open">Subscribe</button>
+          </div>
+        </form>
+      </section>
+      <!--위로 가기 버튼 구역-->
+      <section id="sc-arrow-up">
+        <h2 class="hidden-h"></h2>
+        <div id="arrow-up-div">
+          <a href="#header-top">
+            <img src="../img/keyboard_arrow_up.png" alt="위로가기">
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <a href="#">
+        <img src="../img/Logo-fin.png" alt="logo">
+      </a>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="../img/icon-blog.png" alt="블로그 이동">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../img/icon-insta.png" alt="인스타 이동">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../img/icon-facebook.png" alt="페이스북 이동">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../img/icon-youtube.png" alt="유튜브 이동">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
