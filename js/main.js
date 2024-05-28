@@ -56,7 +56,6 @@ const modalCloses = document.querySelectorAll('.modal-close');
 const modalPopup = document.querySelector('.modal-popup');
 const modalWarning = document.querySelector('.modal-warning');
 
-
 modalOpen.addEventListener('click', function(){
   let subscribeEmail = document.getElementById('subscribe-mail').value;
   if(subscribeEmail == null || subscribeEmail===''){

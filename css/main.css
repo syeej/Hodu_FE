@@ -11,7 +11,13 @@
   font-family: Pretendard-Regular, serif;
 }
 .hidden-h{
-  display: none;
+  /*display: none;*/
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .nav-open-toggle, .nav-close-toggle{ /*모바일 메뉴 목록 열기, 닫기 버튼*/
   display: none;
@@ -112,6 +118,7 @@ header{
   background-color: #D97652;
   border-radius: 40px;
   border: none;
+  cursor: pointer;
 }
 /*인트로*/
 #section-intro{
@@ -203,7 +210,7 @@ main > section{
   line-height: 20px;
   text-align: center;
 }
-#main-picture section:nth-child(1) p span{
+#main-picture section:nth-child(1) p strong{
   font-weight: 700;
   color: #D97652;
 }
@@ -258,6 +265,7 @@ main > section{
   background-color: #D97652;
   border-radius: 40px;
   border: none;
+  cursor: pointer;
 }
 /* 지도 */
 #main-map {
@@ -373,7 +381,6 @@ main > section{
   border-radius: 30px;
   background-image: url("../img/modal_bg_img.png");
 }
-
 .modal-popup div, .modal-warning div{
   height: 400px;
   display: flex;
